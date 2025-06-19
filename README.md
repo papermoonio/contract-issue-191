@@ -12,12 +12,20 @@ follow the document in https://docs.polkadot.com/tutorials/smart-contracts/launc
 npx hardhat vars set PRIVATE_KEY "0x"
 ```
 
+## openzeppelin install
+
+```shell
+npm install @openzeppelin/contracts
+```
+
 ## deploy
 
 ```shell
-npx hardhat ignition deploy ignition/modules/MyToken.ts --network passetHub
+npx hardhat ignition deploy ignition/modules/PVMERC20Votes.ts --network passetHub
 ```
 
-## openzeppelin install
+## test
 
-npm install @openzeppelin/contracts
+```shell
+npx hardhat test test/test_PVMERC20Votes.ts --network passetHub
+```
